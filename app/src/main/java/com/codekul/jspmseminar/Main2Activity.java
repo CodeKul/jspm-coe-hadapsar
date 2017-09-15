@@ -15,6 +15,10 @@ public class Main2Activity extends AppCompatActivity {
     }
 
     public void onLogin(View view) {
-        startActivity(new Intent(this, Main3Activity.class));
+
+        Class cls = Main3Activity.class;
+        startActivity(
+                new Intent(this, cls)
+        );
     }
 }
